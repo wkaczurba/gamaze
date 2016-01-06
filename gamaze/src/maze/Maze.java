@@ -2,7 +2,7 @@ package maze;
 
 import java.util.Iterator;
 
-class MazeIterator implements Iterator<Integer> {
+/*class MazeIterator implements Iterator<Integer> {
 	int i,j;
 	Maze m;
 	
@@ -28,10 +28,10 @@ class MazeIterator implements Iterator<Integer> {
 		// TODO Auto-generated method stub
 		return null;
 	}
-}
+}*/
 
 // Make generic + abstract maze, then do intMaze. (?)
-public class Maze extends Object implements Iterable<Integer> {
+public class Maze extends Object /*implements Iterable<Integer>*/ {
 	// array + some functions.
 	public Integer[][] data; 	// TODO: public -> might be a bit dangerous. (?)
 	public final int width;
@@ -43,14 +43,14 @@ public class Maze extends Object implements Iterable<Integer> {
 		data = new Integer[height][width];
 	}
 	
-	public Iterator<Integer> iterator() {
+	/*public Iterator<Integer> iterator() {
 		return new MazeIterator(this);
-	}
+	}*/
 	
 	public String toString() {
 		String s = "";
 		
-		System.out.println("");
+		System.out.println("to implement...");
 		
 		return s;
 	}
